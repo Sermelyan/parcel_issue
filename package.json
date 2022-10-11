@@ -1,0 +1,30 @@
+{
+  "name": "parcel_issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build test.js test-prom.js --target node"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.8.4",
+    "parcel": "^2.7.0",
+    "prom-client": "^14.1.0"
+  },
+  "targets": {
+    "node": {
+      "includeNodeModules": true,
+      "engines": {
+        "node": "18"
+      },
+      "context": "node",
+      "optimize": true,
+      "sourceMap": false,
+      "distDir": "bundle",
+      "scopeHoist": true
+    }
+  }
+}
